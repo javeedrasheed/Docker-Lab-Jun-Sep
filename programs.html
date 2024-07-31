@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Docker Lab</title>
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fd0bb8f6b2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div>
+        <h1>Corvit</h1>
+      </div>
+      <div>
+        <ul>
+          <a href="index.html">
+            <li><i class="fa-solid fa-house"></i> Home</li>
+          </a>
+          <a href="aboutus.html">
+            <li><i class="fa-solid fa-users-line"></i> About Us</li>
+          </a>
+          <a href="programs.html">
+            <li class="active"><i class="fa-solid fa-book"></i> Programs</li>
+          </a>
+          <a href="contactus.html">
+            <li><i class="fa-solid fa-phone"></i> Contact Us</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    <!-- Main body -->
+    <main id="programsMain">
+      <div id="programs">
+        <div id="courses">
+          <div>
+            <h2>CCNA</h2>
+            <button>View Details</button>
+          </div>
+          <div>
+            <h2>DevOps</h2>
+            <button onclick="openDevOpsDetails()">View Details</button>
+          </div>
+        </div>
+        <div id="coursesDetails">
+          <div id="devOpsDetails">
+            <span class="closeModal" onclick="closeDevOpsDetails()">x</span>
+            <p>
+              <b>Course Fees:</b>
+              <span>35000</span>
+              <br />
+              <br />
+              <b>Duration:</b>
+              <span>3 months</span>
+              <br />
+              <br />
+              <b>Days:</b>
+              <span>Saturday</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer></footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
